@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 290" width="1200" height="290" role="img" aria-label="The full loop: machine, control, data, AI, software, with feedback from software back to the machine.">
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .card { fill: #0f1b2d; stroke: #22324a; stroke-width: 1.4; animation: lit 10s linear infinite; }
+    .c0 { animation-delay: 0s; } .c1 { animation-delay: 2s; } .c2 { animation-delay: 4s; } .c3 { animation-delay: 6s; } .c4 { animation-delay: 8s; } 
+    .flow { stroke-dasharray: 5 9; animation: flow 1.4s linear infinite; }
+    @keyframes lit { 0% { stroke: #22324a; fill: #0f1b2d; } 4%, 16% { stroke: #38d6ff; fill: #12233a; } 22%, 100% { stroke: #22324a; fill: #0f1b2d; } }
+    @keyframes flow { to { stroke-dashoffset: -14; } }
+    @media (prefers-reduced-motion: reduce) { .card, .flow { animation: none; } }
+  </style>
+  <rect width="1200" height="290" rx="16" fill="#0a101c"/>
+  <rect x=".5" y=".5" width="1199" height="289" rx="16" fill="none" stroke="#1d2a3e"/>
+  <g transform="translate(32 44)">
+    <rect class="card c0" width="176" height="150" rx="12"/>
+    <g transform="translate(20 22)" fill="none" stroke="#38d6ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="14" r="5.5"/><circle cx="14" cy="14" r="11" stroke-dasharray="4 4.64"/></g>
+    <text class="mono" x="156" y="38" text-anchor="end" font-size="12" letter-spacing="1" fill="#5b7391">01</text>
+    <text class="mono" x="20" y="100" font-size="21" font-weight="700" letter-spacing="1.5" fill="#eef6ff">MACHINE</text>
+    <text class="mono" x="20" y="126" font-size="12" fill="#8fa5c0">sensors · process</text>
+  </g>
+  <path class="flow" d="M214 119H260" fill="none" stroke="#38d6ff" stroke-width="1.8"/>
+  <path d="M260 114l9 5-9 5z" fill="#38d6ff"/>
+  <g transform="translate(272 44)">
+    <rect class="card c1" width="176" height="150" rx="12"/>
+    <g transform="translate(20 22)" fill="none" stroke="#38d6ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21H8V7H14V21H20V7H26"/></g>
+    <text class="mono" x="156" y="38" text-anchor="end" font-size="12" letter-spacing="1" fill="#5b7391">02</text>
+    <text class="mono" x="20" y="100" font-size="21" font-weight="700" letter-spacing="1.5" fill="#eef6ff">CONTROL</text>
+    <text class="mono" x="20" y="126" font-size="12" fill="#8fa5c0">PLC · PID · Modbus</text>
+  </g>
+  <path class="flow" d="M454 119H500" fill="none" stroke="#38d6ff" stroke-width="1.8"/>
+  <path d="M500 114l9 5-9 5z" fill="#38d6ff"/>
+  <g transform="translate(512 44)">
+    <rect class="card c2" width="176" height="150" rx="12"/>
+    <g transform="translate(20 22)" fill="none" stroke="#38d6ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="14" cy="7" rx="10" ry="4"/><path d="M4 7V21A10 4 0 0 0 24 21V7"/><path d="M4 14A10 4 0 0 0 24 14"/></g>
+    <text class="mono" x="156" y="38" text-anchor="end" font-size="12" letter-spacing="1" fill="#5b7391">03</text>
+    <text class="mono" x="20" y="100" font-size="21" font-weight="700" letter-spacing="1.5" fill="#eef6ff">DATA</text>
+    <text class="mono" x="20" y="126" font-size="12" fill="#8fa5c0">OPC UA · SQL</text>
+  </g>
+  <path class="flow" d="M694 119H740" fill="none" stroke="#38d6ff" stroke-width="1.8"/>
+  <path d="M740 114l9 5-9 5z" fill="#38d6ff"/>
+  <g transform="translate(752 44)">
+    <rect class="card c3" width="176" height="150" rx="12"/>
+    <g transform="translate(20 22)" fill="none" stroke="#38d6ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14L14 5L23 14L14 23ZM5 14H23M14 5V23" stroke-opacity=".6"/><g fill="#0f1b2d"><circle cx="5" cy="14" r="2.6"/><circle cx="14" cy="5" r="2.6"/><circle cx="23" cy="14" r="2.6"/><circle cx="14" cy="23" r="2.6"/></g></g>
+    <text class="mono" x="156" y="38" text-anchor="end" font-size="12" letter-spacing="1" fill="#5b7391">04</text>
+    <text class="mono" x="20" y="100" font-size="21" font-weight="700" letter-spacing="1.5" fill="#eef6ff">AI</text>
+    <text class="mono" x="20" y="126" font-size="12" fill="#8fa5c0">ML · anomalies</text>
+  </g>
+  <path class="flow" d="M934 119H980" fill="none" stroke="#38d6ff" stroke-width="1.8"/>
+  <path d="M980 114l9 5-9 5z" fill="#38d6ff"/>
+  <g transform="translate(992 44)">
+    <rect class="card c4" width="176" height="150" rx="12"/>
+    <g transform="translate(20 22)" fill="none" stroke="#38d6ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6L2 14L9 22M19 6L26 14L19 22M16 4L12 24"/></g>
+    <text class="mono" x="156" y="38" text-anchor="end" font-size="12" letter-spacing="1" fill="#5b7391">05</text>
+    <text class="mono" x="20" y="100" font-size="21" font-weight="700" letter-spacing="1.5" fill="#eef6ff">SOFTWARE</text>
+    <text class="mono" x="20" y="126" font-size="12" fill="#8fa5c0">Python · Flask</text>
+  </g>
+  <path class="flow" d="M1080 194V246H120V203" fill="none" stroke="#f2c14e" stroke-width="1.6" stroke-opacity=".9"/>
+  <path d="M115 203l5-9 5 9z" fill="#f2c14e"/>
+  <rect x="540" y="236" width="120" height="20" fill="#0a101c"/>
+  <text class="mono" x="600" y="250.5" text-anchor="middle" font-size="12" letter-spacing="3" fill="#f2c14e">FEEDBACK</text>
+</svg>
