@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="960" height="400" role="img" aria-label="Achraf El Hani — Industrial and Software Engineering. Machine, control, data, AI, software.">
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .title { font-size: 68px; font-weight: 700; letter-spacing: 6px; }
+    .ghost { opacity: 0; animation: glitch 8s linear infinite; }
+    .ghost.b { animation-delay: .08s; }
+    .scan { animation: scan 9s linear infinite; }
+    .mask { animation: type 10s infinite; animation-timing-function: steps(25, end); }
+    .caret-move { animation: type 10s infinite; animation-timing-function: steps(25, end); }
+    .caret { animation: blink 1s steps(1) infinite; }
+    .pulse { animation: travel 6s linear infinite; }
+    .node { animation: lit 6s linear infinite; }
+    .n2 { animation-delay: 1.5s; } .n3 { animation-delay: 3s; } .n4 { animation-delay: 4.5s; } .n5 { animation-delay: 5.9s; }
+    @keyframes glitch {
+      0%, 91% { opacity: 0; transform: translateX(0); }
+      92% { opacity: .85; transform: translateX(-5px); }
+      94% { opacity: .85; transform: translateX(4px); }
+      96%, 100% { opacity: 0; transform: translateX(0); }
+    }
+    @keyframes scan { 0% { transform: translateY(0); } 100% { transform: translateY(400px); } }
+    @keyframes type { 0% { transform: translateX(0); } 30%, 100% { transform: translateX(300px); } }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes travel {
+      0% { transform: translateX(0); opacity: 0; }
+      4%, 96% { opacity: 1; }
+      100% { transform: translateX(720px); opacity: 0; }
+    }
+    @keyframes lit {
+      0% { fill: #f0b429; stroke: #f0b429; }
+      18%, 100% { fill: #0d1117; stroke: #7d8590; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .ghost, .scan, .mask, .caret-move, .caret, .pulse, .node { animation: none; }
+      .mask { transform: translateX(300px); }
+      .caret-move { transform: translateX(300px); }
+      .pulse { opacity: 0; }
+    }
+  </style>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".035" stroke-width="1"/>
+    </pattern>
+    <clipPath id="card"><rect width="960" height="400" rx="14"/></clipPath>
+    <clipPath id="sliceA"><rect x="0" y="126" width="960" height="16"/></clipPath>
+    <clipPath id="sliceB"><rect x="0" y="150" width="960" height="12"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="960" height="400" fill="#0d1117"/>
+    <rect width="960" height="400" fill="url(#grid)"/>
+    <rect class="scan" x="0" y="-2" width="960" height="2" fill="#ffffff" fill-opacity=".05"/>
+  </g>
+  <rect x=".5" y=".5" width="959" height="399" rx="14" fill="none" stroke="#30363d"/>
+
+  <g fill="none" stroke="#f0b429" stroke-width="2" stroke-opacity=".75">
+    <path d="M24 44V24H44"/><path d="M916 24H936V44"/>
+    <path d="M24 356V376H44"/><path d="M916 376H936V356"/>
+  </g>
+
+  <g class="mono" font-size="14" fill="#7d8590" letter-spacing="1">
+    <text x="60" y="52">~/achrafelhani</text>
+    <text x="900" y="52" text-anchor="end">43.30°N 5.37°E · MARSEILLE</text>
+  </g>
+
+  <text class="mono title" x="480" y="170" text-anchor="middle" fill="#e6edf3">ACHRAF EL HANI</text>
+  <g clip-path="url(#sliceA)"><text class="mono title ghost" x="480" y="170" text-anchor="middle" fill="#f0b429">ACHRAF EL HANI</text></g>
+  <g clip-path="url(#sliceB)"><text class="mono title ghost b" x="480" y="170" text-anchor="middle" fill="#58a6ff">ACHRAF EL HANI</text></g>
+
+  <text class="mono" x="480" y="214" text-anchor="middle" font-size="19" letter-spacing="4" fill="#9da7b3">INDUSTRIAL &amp; SOFTWARE ENGINEERING</text>
+
+  <text class="mono" x="330" y="264" font-size="20" fill="#e6edf3" textLength="300" lengthAdjust="spacing"><tspan fill="#f0b429">&gt;</tspan> from sensor to software</text>
+  <rect class="mask" x="330" y="242" width="304" height="30" fill="#0d1117"/>
+  <g class="caret-move"><rect class="caret" x="336" y="246" width="10" height="22" fill="#f0b429"/></g>
+
+  <line x1="120" y1="326" x2="840" y2="326" stroke="#30363d" stroke-width="2"/>
+  <circle class="pulse" cx="120" cy="326" r="4" fill="#f0b429"/>
+  <g fill="#0d1117" stroke="#7d8590" stroke-width="2">
+    <circle class="node" cx="120" cy="326" r="6"/>
+    <circle class="node n2" cx="300" cy="326" r="6"/>
+    <circle class="node n3" cx="480" cy="326" r="6"/>
+    <circle class="node n4" cx="660" cy="326" r="6"/>
+    <circle class="node n5" cx="840" cy="326" r="6"/>
+  </g>
+  <g class="mono" font-size="15" fill="#9da7b3" letter-spacing="2" text-anchor="middle">
+    <text x="120" y="360">MACHINE</text>
+    <text x="300" y="360">CONTROL</text>
+    <text x="480" y="360">DATA</text>
+    <text x="660" y="360">AI</text>
+    <text x="840" y="360">SOFTWARE</text>
+  </g>
+</svg>
