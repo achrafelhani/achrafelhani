@@ -13,12 +13,12 @@ I work across the whole loop rather than a single layer: the physical process, t
 ## Stack
 
 <table>
-  <tr><td><b>Software</b></td><td>Python · SQL · Flask · SQLAlchemy</td></tr>
+  <tr><td><b>Software</b></td><td>Python · TypeScript · SQL · FastAPI · Flask · React · SQLAlchemy</td></tr>
   <tr><td><b>Data</b></td><td>Pandas · NumPy · Matplotlib</td></tr>
-  <tr><td><b>AI&nbsp;&amp;&nbsp;analytics</b></td><td>scikit-learn · PCA · clustering · regression · anomaly detection</td></tr>
+  <tr><td><b>AI&nbsp;&amp;&nbsp;analytics</b></td><td>scikit-learn · PCA · regression · anomaly detection</td></tr>
   <tr><td><b>Automation&nbsp;&amp;&nbsp;control</b></td><td>PLC (Delta) · CODESYS · PID control · MATLAB / Simulink</td></tr>
   <tr><td><b>Industrial&nbsp;systems</b></td><td>OPC UA · Modbus · Ignition (SCADA)</td></tr>
-  <tr><td><b>3D&nbsp;&amp;&nbsp;simulation</b></td><td>Open3D · 3D Slicer · ANSYS</td></tr>
+  <tr><td><b>3D&nbsp;&amp;&nbsp;simulation</b></td><td>Open3D · three.js · 3D Slicer · ANSYS</td></tr>
   <tr><td><b>Tools</b></td><td>Git · GitHub · VS Code</td></tr>
 </table>
 
@@ -26,16 +26,16 @@ I work across the whole loop rather than a single layer: the physical process, t
 
 <table>
   <tr>
+    <td><b><a href="https://github.com/achrafelhani/mandible-ssm">MandibleSSM</a></b><br><sub>3D · DATA · SOFTWARE</sub></td>
+    <td>Web platform for statistical shape modeling of human mandibles: FPFH / RANSAC / ICP correspondence, PCA shape modes, and leave-one-out model evaluation. FastAPI, React, Open3D.</td>
+  </tr>
+  <tr>
     <td><b>PolyHeat</b><br><sub>CONTROL</sub></td>
     <td>Closed-loop thermal regulation on a Delta PLC: PID control, Modbus communication, HMI, and a MATLAB / Simulink model of the process.</td>
   </tr>
   <tr>
     <td><b>SCADA&nbsp;monitoring</b><br><sub>INDUSTRIAL SYSTEMS</sub></td>
     <td>Supervision built on CODESYS and Ignition over OPC UA, with SQL historization, alarms, and condition-based maintenance.</td>
-  </tr>
-  <tr>
-    <td><b>Mandible&nbsp;shape&nbsp;modeling</b><br><sub>3D · DATA</sub></td>
-    <td>Statistical shape modeling of 3D mandibles in Python: correspondence, PCA, and clustering with Open3D, 3D Slicer, and ANSYS.</td>
   </tr>
   <tr>
     <td><b>Industrial&nbsp;data&nbsp;analytics</b><br><sub>DATA · AI</sub></td>
