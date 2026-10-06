@@ -15,7 +15,7 @@ I work across the whole loop rather than a single layer: the physical process, t
 <table>
   <tr><td><b>Software</b></td><td>Python · TypeScript · SQL · FastAPI · Flask · React · SQLAlchemy</td></tr>
   <tr><td><b>Data</b></td><td>Pandas · NumPy · Matplotlib</td></tr>
-  <tr><td><b>AI&nbsp;&amp;&nbsp;analytics</b></td><td>scikit-learn · PCA · regression · anomaly detection</td></tr>
+  <tr><td><b>AI&nbsp;&amp;&nbsp;analytics</b></td><td>scikit-learn · PCA · regression · anomaly detection · LLM APIs</td></tr>
   <tr><td><b>Automation&nbsp;&amp;&nbsp;control</b></td><td>PLC (Delta) · CODESYS · PID control · MATLAB / Simulink</td></tr>
   <tr><td><b>Industrial&nbsp;systems</b></td><td>OPC UA · Modbus · Ignition (SCADA)</td></tr>
   <tr><td><b>3D&nbsp;&amp;&nbsp;simulation</b></td><td>Open3D · three.js · 3D Slicer · ANSYS</td></tr>
@@ -30,6 +30,10 @@ I work across the whole loop rather than a single layer: the physical process, t
     <td>Web platform for statistical shape modeling of human mandibles: FPFH / RANSAC / ICP correspondence, PCA shape modes, and leave-one-out model evaluation. FastAPI, React, Open3D.</td>
   </tr>
   <tr>
+    <td><b><a href="https://github.com/achrafelhani/nutriai">NutriAI</a></b><br><sub>SOFTWARE · AI</sub></td>
+    <td>Nutrition tracking web app: meal logging from text or photos with LLM-based estimation, daily dashboard, 30-day analytics, and a context-aware coach. Flask, SQLAlchemy, JWT.</td>
+  </tr>
+  <tr>
     <td><b>PolyHeat</b><br><sub>CONTROL</sub></td>
     <td>Closed-loop thermal regulation on a Delta PLC: PID control, Modbus communication, HMI, and a MATLAB / Simulink model of the process.</td>
   </tr>
@@ -40,10 +44,6 @@ I work across the whole loop rather than a single layer: the physical process, t
   <tr>
     <td><b>Industrial&nbsp;data&nbsp;analytics</b><br><sub>DATA · AI</sub></td>
     <td>Excel / CSV ingestion with Pandas, KPI computation, MAD-based anomaly detection, regression, dashboards, and reporting.</td>
-  </tr>
-  <tr>
-    <td><b>NutriAI</b><br><sub>SOFTWARE · AI</sub></td>
-    <td>Nutrition-tracking web application built with Flask and SQLAlchemy, using multimodal AI.</td>
   </tr>
 </table>
 
